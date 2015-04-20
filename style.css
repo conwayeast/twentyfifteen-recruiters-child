@@ -1,17 +1,15 @@
 /*
-Theme Name: Twenty Fifteen
-Theme URI: https://wordpress.org/themes/twentyfifteen/
-Author: the WordPress team
-Author URI: https://wordpress.org/
-Description: Our 2015 default theme is clean, blog-focused, and designed for clarity. Twenty Fifteen's simple, straightforward typography is readable on a wide variety of screen sizes, and suitable for multiple languages. We designed it using a mobile-first approach, meaning your content takes center-stage, regardless of whether your visitors arrive by smartphone, tablet, laptop, or desktop computer.
-Version: 1.0
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: black, blue, gray, pink, purple, white, yellow, dark, light, two-columns, left-sidebar, fixed-layout, responsive-layout, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready
-Text Domain: twentyfifteen
-
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
+ Theme Name:   Twenty Fifteen cdub Child
+ Theme URI:    http://example.com/twenty-fifteen-child/
+ Description:  Twenty Fifteen Child Theme
+ Author:       Ryan Conway
+ Author URI:   http://conwayeast.com
+ Template:     twentyfifteen
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  twenty-fifteen-child
 */
 
 
@@ -91,7 +89,7 @@ html {
 
 body {
 	/*background: #f1f1f1;*/
-	background:url('http://subtlepatterns.com/patterns/symphony.png');
+	background: url('http://subtlepatterns.com/patterns/symphony.png');
 }
 
 article,
@@ -5994,7 +5992,7 @@ p > video {
 	}
 }
 
-
+/*CONTACT FORM WIDTH 100%*/
 .contact-form input[type='text'], .contact-form input[type='email'], .contact-form textarea {
   width: 98% !important;
 }
