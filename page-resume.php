@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Experience
+Template Name: Resume
 */
 
 get_header(); ?>
@@ -12,7 +12,7 @@ get_header(); ?>
 		// Start the loop.
 		while ( have_posts() ) : the_post();
 			// Include the page content template.
-			get_template_part( 'experience', 'education', 'page' );
+			get_template_part( 'content', 'resume' );
 		// End the loop.
 		endwhile;
 		?>

@@ -15,6 +15,7 @@
 		// Post thumbnail.
 		twentyfifteen_post_thumbnail();
 	?>
+
 	<header class="entry-header">
 		<?php
 			if ( is_single() ) :
@@ -33,9 +34,25 @@
 				__( 'Continue reading %s', 'twentyfifteen' ),
 				the_title( '<span class="screen-reader-text">', '</span>', false )
 			) );
+
 		?>
 
-	</div><!-- .entry-content -->
+			<div>
+
+				<?php
+
+					$image = get_field( 'photo' );
+
+					if( !empty($image) ): ?>
+
+						<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" title="<?php echo $image['title']; ?>"/>
+
+					<?php endif; ?>
+
+			</div>
+
+			</div><!-- .entry-content -->
+
 
 	<footer class="entry-footer">
 		<?php twentyfifteen_entry_meta(); ?>
