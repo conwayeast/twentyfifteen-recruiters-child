@@ -30,9 +30,9 @@
 			<div class="site-branding">
 				<?php
 					if ( is_front_page() && is_home() ) : ?>
-						<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+						<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="http://localhost/cdub/wp-content/uploads/2015/04/conwayeast-logo.svg" alt=""></a></h1>
 					<?php else : ?>
-						<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+						<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="http://localhost/cdub/wp-content/uploads/2015/04/conwayeast-logo.svg" alt=""></a></p>
 					<?php endif;
 
 					$description = get_bloginfo( 'description', 'display' );
