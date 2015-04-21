@@ -25,7 +25,7 @@
 
       <div style="text-align: center;">
 
-        <a href="<?php the_field( 'button_link' ); ?>" title=""><button type=""><p><?php the_field( 'button_text' ); ?></p></button></a>
+        <a href="<?php the_field( 'button_link' ); ?>" title=""><button type=""><?php the_field( 'button_text' ); ?></button></a>
 
       </div>
 

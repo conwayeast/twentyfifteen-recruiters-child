@@ -4042,7 +4042,8 @@ p > video {
 
 @media screen and (min-width: 59.6875em) {
 	body:before {
-		background-color: #fff;
+		/*background-color: #fff;*/
+		background-color: #f4421a;
 		box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
 		content: "";
 		display: block;
@@ -5996,3 +5997,31 @@ p > video {
 .contact-form input[type='text'], .contact-form input[type='email'], .contact-form textarea {
   width: 98% !important;
 }
+
+/* MAIN MENU LINK COLOR*/
+
+ul#menu-main > li > a{
+	color: white;
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.post-password-form input[type="submit"],
+.widecolumn #submit,
+.widecolumn .mu_register input[type="submit"]{
+	background: #f4421a;
+}
+
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover,
+.post-password-form input[type="submit"]:hover,
+.widecolumn #submit:hover,
+.widecolumn .mu_register input[type="submit"]:hover{
+	background: #DF3123;
+}
+
+

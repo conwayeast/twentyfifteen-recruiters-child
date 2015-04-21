@@ -52,7 +52,7 @@
 
 							<h3 style="margin: 0"><?php the_field( 'project_details' ); ?></h3>
 
-							<a href="<?php the_field( 'project_button' ); ?>" target="_blank" title=""><button type=""><p>Visit Site</p></button></a>
+							<a href="<?php the_field( 'project_button' ); ?>" target="_blank" title=""><button type="">Visit Site</button></a>
 
 						</div><!-- text-align:center -->
 
