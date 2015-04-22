@@ -1,16 +1,19 @@
 .wp-caption {
-	margin-bottom: 1.5em;
-	max-width: 100%;
+  margin-bottom: 1.6em;
+  max-width: 100%;
+}
 
-	img[class*="wp-image-"] {
-		@include center-block;
-	}
-
-	.wp-caption-text {
-		margin: 0.8075em 0;
-	}
+.wp-caption img[class*="wp-image-"] {
+  display: block;
+  margin: 0;
 }
 
 .wp-caption-text {
-	text-align: center;
+  color: #707070;
+  color: rgba(51, 51, 51, 0.7);
+  font-family: "Noto Sans", sans-serif;
+  font-size: 12px;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  padding: 0.5em 0;
 }

@@ -1,25 +1,62 @@
-.page-content .wp-smiley,
-.entry-content .wp-smiley,
-.comment-content .wp-smiley {
-	border: none;
-	margin-bottom: 0;
-	margin-top: 0;
-	padding: 0;
+.site .avatar {
+  border-radius: 50%;
 }
 
-/* Make sure embeds and iframes fit their containers. */
+.page-content img.wp-smiley,
+.entry-content img.wp-smiley,
+.comment-content img.wp-smiley {
+  border: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+audio,
+canvas {
+  display: inline-block;
+}
+
 embed,
 iframe,
-object {
-	max-width: 100%;
+object,
+video {
+  margin-bottom: 1.6em;
+  max-width: 100%;
+  vertical-align: middle;
 }
 
-/*--------------------------------------------------------------
-## Captions
---------------------------------------------------------------*/
-@import "captions";
+p > embed,
+p > iframe,
+p > object,
+p > video {
+  margin-bottom: 0;
+}
 
-/*--------------------------------------------------------------
-## Galleries
---------------------------------------------------------------*/
+.wp-audio-shortcode,
+.wp-video,
+.wp-playlist.wp-audio-playlist {
+  font-size: 15px;
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 1.6em;
+}
+
+.wp-playlist.wp-playlist {
+  padding-bottom: 0;
+}
+
+.wp-playlist .wp-playlist-tracks {
+  margin-top: 0;
+}
+
+.wp-playlist-item .wp-playlist-caption {
+  border-bottom: 0;
+  padding: 10px 0;
+}
+
+.wp-playlist-item .wp-playlist-item-length {
+  top: 10px;
+}
+
+@import "captions";
 @import "galleries";

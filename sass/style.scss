@@ -1,74 +1,74 @@
 /*
-Theme Name: _s
-Theme URI: http://underscores.me/
-Author: Automattic
-Author URI: http://automattic.com/
-Description: Hi. I'm a starter theme called <code>_s</code>, or <em>underscores</em>, if you like. I'm a theme meant for hacking so don't use me as a <em>Parent Theme</em>. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
-Version: 1.0.0
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: _s
-Tags:
-
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
-
-_s is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
-
-Normalizing styles have been helped along thanks to the fine work of
-Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+ Theme Name:   Twenty Fifteen cdub Child
+ Theme URI:    http://example.com/twenty-fifteen-child/
+ Description:  Twenty Fifteen Child Theme
+ Author:       Ryan Conway
+ Author URI:   http://conwayeast.com
+ Template:     twentyfifteen
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  twenty-fifteen-child
 */
 
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
-# Normalize
+# RESET
+# Genericons
 # Typography
 # Elements
 # Forms
-# Navigation
+# Navigations
 	## Links
 	## Menus
 # Accessibility
 # Alignments
 # Clearings
+# Header
 # Widgets
 # Content
     ## Posts and pages
-	## Asides
-	## Comments
-# Infinite scroll
+		## Post Formats
+		## Comments
+# Footer
 # Media
-	## Captions
-	## Galleries
---------------------------------------------------------------*/
-@import "variables-site/variables-site";
-@import "mixins/mixins-master";
+		## Captions
+		## Galleries
+# Multisite
+# Media Queries
+# Print
 
 /*--------------------------------------------------------------
-# Normalize
+# Reset
 --------------------------------------------------------------*/
-@import "normalize";
+@import "reset";
+
+/*--------------------------------------------------------------
+# Genericons
+--------------------------------------------------------------*/
+@import "genericons";
 
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
-@import "typography/typography";
+@import "typography";
 
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
-@import "elements/elements";
+@import "elements";
 
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
-@import "forms/forms";
+@import "forms";
 
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
-@import "navigation/navigation";
+@import "navigations/navigations";
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -86,21 +86,78 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "modules/clearings";
 
 /*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+@import "header";
+
+/*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
-@import "site/secondary/widgets";
+@import "widgets";
 
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
-@import "site/site";
+@import "content/content";
 
 /*--------------------------------------------------------------
-# Infinite scroll
+# Footer
 --------------------------------------------------------------*/
-@import "modules/infinite-scroll";
+@import "footer";
 
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
 @import "media/media";
+
+/*--------------------------------------------------------------
+# Multisite
+--------------------------------------------------------------*/
+@import "multisite";
+
+/*--------------------------------------------------------------
+# Media Queries
+--------------------------------------------------------------*/
+@import "media-queries";
+
+/*--------------------------------------------------------------
+# Print
+--------------------------------------------------------------*/
+@import "print";
+
+
+
+
+/*CONTACT FORM WIDTH 100%*/
+
+.contact-form input[type='text'], .contact-form input[type='email'], .contact-form textarea {
+  width: 98% !important;
+}
+
+
+
+/* MAIN MENU LINK COLOR*/
+
+ul#menu-main > li > a{
+	color: white;
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.post-password-form input[type="submit"],
+.widecolumn #submit,
+.widecolumn .mu_register input[type="submit"]{
+	background: #f4421a;
+}
+
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover,
+.post-password-form input[type="submit"]:hover,
+.widecolumn #submit:hover,
+.widecolumn .mu_register input[type="submit"]:hover{
+	background: #DF3123;
+}
