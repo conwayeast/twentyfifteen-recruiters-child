@@ -1,5 +1,6 @@
 .sass-cache/*
 .sass-cache
-css/*
+style.css
+style.css.map
 .DS_Store
 prepros.cfg
