@@ -1,0 +1,163 @@
+/*
+ Theme Name:   Twenty Fifteen cdub Child
+ Theme URI:    http://example.com/twenty-fifteen-child/
+ Description:  Twenty Fifteen Child Theme
+ Author:       Ryan Conway
+ Author URI:   http://conwayeast.com
+ Template:     twentyfifteen
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  twenty-fifteen-child
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# RESET
+# Genericons
+# Typography
+# Elements
+# Forms
+# Navigations
+	## Links
+	## Menus
+# Accessibility
+# Alignments
+# Clearings
+# Header
+# Widgets
+# Content
+    ## Posts and pages
+		## Post Formats
+		## Comments
+# Footer
+# Media
+		## Captions
+		## Galleries
+# Multisite
+# Media Queries
+# Print
+
+/*--------------------------------------------------------------
+# Reset
+--------------------------------------------------------------*/
+@import "reset";
+
+/*--------------------------------------------------------------
+# Genericons
+--------------------------------------------------------------*/
+@import "genericons";
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+@import "typography";
+
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+@import "elements";
+
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+@import "forms";
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+@import "navigations/navigations";
+
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+@import "modules/accessibility";
+
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+@import "modules/alignments";
+
+/*--------------------------------------------------------------
+# Clearings
+--------------------------------------------------------------*/
+@import "modules/clearings";
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+@import "header";
+
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+@import "widgets";
+
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+@import "content/content";
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+@import "footer";
+
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+@import "media/media";
+
+/*--------------------------------------------------------------
+# Multisite
+--------------------------------------------------------------*/
+@import "multisite";
+
+/*--------------------------------------------------------------
+# Media Queries
+--------------------------------------------------------------*/
+@import "media-queries";
+
+/*--------------------------------------------------------------
+# Print
+--------------------------------------------------------------*/
+@import "print";
+
+
+
+
+/*CONTACT FORM WIDTH 100%*/
+
+.contact-form input[type='text'], .contact-form input[type='email'], .contact-form textarea {
+  width: 98% !important;
+}
+
+
+
+/* MAIN MENU LINK COLOR*/
+
+ul#menu-main > li > a{
+	color: white;
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.post-password-form input[type="submit"],
+.widecolumn #submit,
+.widecolumn .mu_register input[type="submit"]{
+	background: #f4421a;
+}
+
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover,
+.post-password-form input[type="submit"]:hover,
+.widecolumn #submit:hover,
+.widecolumn .mu_register input[type="submit"]:hover{
+	background: #DF3123;
+}
