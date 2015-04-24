@@ -1,0 +1,70 @@
+//*****************************************
+//
+// PAGE CONTAINERS
+// These styles wrap sections of main content
+//
+//*****************************************
+
+.container {
+  width: 100%;
+  padding: 1em 0;
+  @include clearfix;
+}
+
+//*****************************************
+//
+// LAYOUT CONTAINERS
+//
+//*****************************************
+
+.container__one-fourth {
+  @include span-columns(3);
+  @include MQ(S){
+    @include span-columns(12);
+  }
+}
+
+.container__one-half {
+  @include span-columns(6);
+  @include MQ(M) {
+    @include span-columns(12);
+  }
+}
+
+.container__one-third {
+  @include span-columns(4);
+  @include MQ(S){
+    @include span-columns(12);
+  }
+}
+
+.container__two-third {
+  @include span-columns(8);
+  @include MQ(S){
+    @include span-columns(12);
+  }
+}
+
+//*****************************************
+//
+// CONTAINERS w/ ADJUSTED PADDING
+//
+//*****************************************
+
+.container--nopad {
+  @extend .container;
+  padding: 0;
+}
+
+.container--nopadtop {
+  @extend .container;
+  padding-top: 0;
+}
+
+.container--nopadbottom {
+  width: 100%;
+  padding: 2em 0 0;
+  @include clearfix;
+}
+
+

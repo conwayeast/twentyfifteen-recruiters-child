@@ -1,0 +1,51 @@
+.container__what-where-when{
+  @include span-columns(12);
+  padding: 3em 0em 1em 0em;
+  border-bottom: 1px solid #ccc;
+  @include clearfix;
+}
+
+.container__what-where{
+  @include span-columns(8);
+  margin-bottom: 2em;
+  @include clearfix;
+  @include MQ(SM){
+    @include span-columns(12);
+  }
+}
+
+.container__when{
+  @include span-columns(4);
+  margin-right: 0;
+  background: #333;
+  color: white;
+  padding: 0.5em 0.25em;
+  @include MQ(SM){
+    @include span-columns(12);
+    margin: 1em 0em;
+  }
+}
+
+.container__description{
+  @include span-columns(12);
+  @include clearfix;
+}
+
+.title__what{
+  margin: 0 !important;
+  @include MQ(SM){
+    font-size: 1.35em !important;
+    margin-bottom: 0.5em !important;
+  }
+}
+
+.title__where{
+  margin: 0 !important;
+}
+
+.title__when{
+  margin: 0 !important;
+  font-size: 0.95em !important;
+  text-align: center;
+}
+

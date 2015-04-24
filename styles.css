@@ -11,7 +11,6 @@
  Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
  Text Domain:  twenty-fifteen-child
 */
-
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
@@ -43,137 +42,170 @@
 /*--------------------------------------------------------------
 # Bourbon
 --------------------------------------------------------------*/
-@import "bourbon/bourbon";
-
 /*--------------------------------------------------------------
 # Neat
 --------------------------------------------------------------*/
-@import "neat/neat";
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
 
 /*--------------------------------------------------------------
 # Break Points
 --------------------------------------------------------------*/
-@import "break-points";
-
 /*--------------------------------------------------------------
 # Custom Grid
 --------------------------------------------------------------*/
-@import "custom-grid";
+.container, .container--nopad, .container--nopadtop {
+  width: 100%;
+  padding: 1em 0; }
+  .container::after, .container--nopad::after, .container--nopadtop::after {
+    clear: both;
+    content: "";
+    display: table; }
 
-/*--------------------------------------------------------------
-# Resume
---------------------------------------------------------------*/
-@import "resume";
+.container__one-fourth {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%; }
+  .container__one-fourth:last-child {
+    margin-right: 0; }
+  @media all and (max-width: 30em) {
+    .container__one-fourth {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      .container__one-fourth:last-child {
+        margin-right: 0; } }
+
+.container__one-third {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%; }
+  .container__one-third:last-child {
+    margin-right: 0; }
+  @media all and (max-width: 30em) {
+    .container__one-third {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      .container__one-third:last-child {
+        margin-right: 0; } }
+
+.container__one-half {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%; }
+  .container__one-half:last-child {
+    margin-right: 0; }
+  @media all and (max-width: 50em) {
+    .container__one-half {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      .container__one-half:last-child {
+        margin-right: 0; } }
+
+.container__two-third {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%; }
+  .container__two-third:last-child {
+    margin-right: 0; }
+  @media all and (max-width: 30em) {
+    .container__two-third {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      .container__two-third:last-child {
+        margin-right: 0; } }
+
+.container--nopad {
+  padding: 0; }
+
+.container--nopadtop {
+  padding-top: 0; }
+
+.container--nopadbottom {
+  width: 100%;
+  padding: 2em 0 0; }
+  .container--nopadbottom::after {
+    clear: both;
+    content: "";
+    display: table; }
 
 /*--------------------------------------------------------------
 # Reset
 --------------------------------------------------------------*/
-//@import "reset";
-
 /*--------------------------------------------------------------
 # Genericons
 --------------------------------------------------------------*/
-//@import "genericons";
-
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
-//@import "typography";
-
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
-//@import "elements";
-
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
-//@import "forms";
-
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
-//@import "navigations/navigations";
-
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
-//@import "modules/accessibility";
-
 /*--------------------------------------------------------------
 # Alignments
 --------------------------------------------------------------*/
-//@import "modules/alignments";
-
 /*--------------------------------------------------------------
 # Clearings
 --------------------------------------------------------------*/
-//@import "modules/clearings";
-
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
-//@import "header";
-
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
-//@import "widgets";
-
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
-//@import "content/content";
-
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
-//@import "footer";
-
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
-//@import "media/media";
-
 /*--------------------------------------------------------------
 # Multisite
 --------------------------------------------------------------*/
-//@import "multisite";
-
 /*--------------------------------------------------------------
 # Media Queries
 --------------------------------------------------------------*/
-//@import "media-queries";
-
 /*--------------------------------------------------------------
 # Print
 --------------------------------------------------------------*/
-//@import "print";
-
-
-
 /*BACKGROUND PATTERN*/
-
 body {
-  background: url('http://subtlepatterns.com/patterns/symphony.png');
-}
-
+  background: url("http://subtlepatterns.com/patterns/symphony.png"); }
 
 /**
  * 16.4 Desktop Small 955px
  */
-
 @media screen and (min-width: 59.6875em) {
   body:before {
-    background-color: #f4421a;
-  }
-}
-
+    background-color: #f4421a; } }
 /* MAIN MENU LINK COLOR*/
-
-ul#menu-main > li > a{
-	color: white;
-}
+ul#menu-main > li > a {
+  color: white; }
 
 button,
 input[type="button"],
@@ -181,9 +213,8 @@ input[type="reset"],
 input[type="submit"],
 .post-password-form input[type="submit"],
 .widecolumn #submit,
-.widecolumn .mu_register input[type="submit"]{
-	background: #f4421a;
-}
+.widecolumn .mu_register input[type="submit"] {
+  background: #f4421a; }
 
 button:hover,
 input[type="button"]:hover,
@@ -191,12 +222,11 @@ input[type="reset"]:hover,
 input[type="submit"]:hover,
 .post-password-form input[type="submit"]:hover,
 .widecolumn #submit:hover,
-.widecolumn .mu_register input[type="submit"]:hover{
-	background: #DF3123;
-}
+.widecolumn .mu_register input[type="submit"]:hover {
+  background: #DF3123; }
 
 /*CONTACT FORM WIDTH 100%*/
-
 .contact-form input[type='text'], .contact-form input[type='email'], .contact-form textarea {
-  width: 98% !important;
-}
+  width: 98% !important; }
+
+/*# sourceMappingURL=styles.css.map */
