@@ -65,12 +65,14 @@
 		<?php endwhile; ?>
 </div>
 
+<div class="clearfix"></div>
 
-<div style="margin-top: 3em;">
+<div style="margin-bottom: 3em; clear:both;">
+
+
 	<!-- EDUCATION -->
-		<header>
 			<h2>Education</h2>
-		</header><!-- /header -->
+
 
 		<?php $school = new WP_Query(array(
 				'post_type'	=>	'school'

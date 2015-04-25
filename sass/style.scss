@@ -6,9 +6,6 @@
  Author URI:   http://conwayeast.com
  Template:     twentyfifteen
  Version:      1.0.0
- License:      GNU General Public License v2 or later
- License URI:  http://www.gnu.org/licenses/gpl-2.0.html
- Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
  Text Domain:  twenty-fifteen-child
 */
 
@@ -58,7 +55,7 @@
 /*--------------------------------------------------------------
 # Custom Grid
 --------------------------------------------------------------*/
-@import "custom-grid";
+//@import "custom-grid";
 
 /*--------------------------------------------------------------
 # Resume
@@ -66,9 +63,20 @@
 @import "resume";
 
 /*--------------------------------------------------------------
+# Project
+--------------------------------------------------------------*/
+@import "project";
+
+
+/*--------------------------------------------------------------
 # Reset
 --------------------------------------------------------------*/
 //@import "reset";
+
+/*BACKGROUND PATTERN*/
+body {
+  background: url('http://subtlepatterns.com/patterns/symphony.png');
+}
 
 /*--------------------------------------------------------------
 # Genericons
@@ -90,10 +98,74 @@
 --------------------------------------------------------------*/
 //@import "forms";
 
+
+// Change button color
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.post-password-form input[type="submit"],
+.widecolumn #submit,
+.widecolumn .mu_register input[type="submit"]{
+  background: #f4421a;
+  border: 3px solid white;
+  @include transition (background .6s ease-in-out, border .6s ease-in-out, color .6s ease-in-out);
+}
+
+//Remove wierd black line and background when button is active or focused
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover,
+button:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus {
+  background-color: #f4421a;
+  outline: 0;
+}
+
+
+// Change button hover color
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover,
+.post-password-form input[type="submit"]:hover,
+.widecolumn #submit:hover,
+.widecolumn .mu_register input[type="submit"]:hover{
+  background: white;
+  border: 3px solid #f4421a;
+  color: #f4421a;
+  @include transition (background .6s ease-in-out, border .6s ease-in-out, color .6s ease-in-out);
+}
+
+
+
+/*CONTACT FORM WIDTH 100%*/
+
+.contact-form input[type='text'],
+.contact-form input[type='email'],
+.contact-form textarea {
+  width: 98% !important;
+}
+
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
 //@import "navigations/navigations";
+
+/**
+ * 6.2 Menus
+ */
+.main-navigation a {
+  color: white;
+  @include transition (color .3s ease-in-out);
+  &:hover{
+    color: #333;
+    @include transition (color .3s ease-in-out);
+  }
+}
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -115,6 +187,12 @@
 --------------------------------------------------------------*/
 //@import "header";
 
+.site-header {
+  @include MQ(BM){
+    background: #f4421a;
+  }
+}
+
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
@@ -124,6 +202,10 @@
 # Content
 --------------------------------------------------------------*/
 //@import "content/content";
+
+.secondary.toggled-on {
+  background: #f4421a;
+}
 
 /*--------------------------------------------------------------
 # Footer
@@ -145,58 +227,16 @@
 --------------------------------------------------------------*/
 //@import "media-queries";
 
-/*--------------------------------------------------------------
-# Print
---------------------------------------------------------------*/
-//@import "print";
-
-
-
-/*BACKGROUND PATTERN*/
-
-body {
-  background: url('http://subtlepatterns.com/patterns/symphony.png');
-}
-
-
 /**
  * 16.4 Desktop Small 955px
  */
-
 @media screen and (min-width: 59.6875em) {
   body:before {
     background-color: #f4421a;
   }
 }
 
-/* MAIN MENU LINK COLOR*/
-
-ul#menu-main > li > a{
-	color: white;
-}
-
-button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"],
-.post-password-form input[type="submit"],
-.widecolumn #submit,
-.widecolumn .mu_register input[type="submit"]{
-	background: #f4421a;
-}
-
-button:hover,
-input[type="button"]:hover,
-input[type="reset"]:hover,
-input[type="submit"]:hover,
-.post-password-form input[type="submit"]:hover,
-.widecolumn #submit:hover,
-.widecolumn .mu_register input[type="submit"]:hover{
-	background: #DF3123;
-}
-
-/*CONTACT FORM WIDTH 100%*/
-
-.contact-form input[type='text'], .contact-form input[type='email'], .contact-form textarea {
-  width: 98% !important;
-}
+/*--------------------------------------------------------------
+# Print
+--------------------------------------------------------------*/
+//@import "print";

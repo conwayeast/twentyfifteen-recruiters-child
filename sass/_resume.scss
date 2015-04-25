@@ -3,6 +3,9 @@
   padding: 3em 0em 1em 0em;
   border-bottom: 1px solid #ccc;
   @include clearfix;
+  // &:last-child{
+  //   border-bottom: none;
+  // }
 }
 
 .container__what-where{
@@ -11,14 +14,17 @@
   @include clearfix;
   @include MQ(SM){
     @include span-columns(12);
+    margin-bottom: 0;
   }
 }
 
 .container__when{
   @include span-columns(4);
   margin-right: 0;
-  background: #333;
-  color: white;
+  border: 3px solid #333;
+  //background: #333;
+  //color: white;
+  color: #333;
   padding: 0.5em 0.25em;
   @include MQ(SM){
     @include span-columns(12);
@@ -49,3 +55,6 @@
   text-align: center;
 }
 
+.clearfix{
+  @include clearfix;
+}

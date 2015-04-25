@@ -16,7 +16,7 @@
 		twentyfifteen_post_thumbnail();
 	?>
 
-	<header class="entry-header">
+	<header class="entry-header" style="text-align:center;">
 		<?php
 			if ( is_single() ) :
 				the_title( '<h1 class="entry-title">', '</h1>' );
@@ -37,28 +37,27 @@
 
 		?>
 
-			<div>
-					<?php
+			<div class="project__container">
 
-						$image = get_field( 'featured_project_image' );
+				<div class="project__img">
 
-						if( !empty($image) ): ?>
+					<?php $image = get_field( 'featured_project_image' );
 
-							<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" title="<?php echo $image['title']; ?>"/>
+					if( !empty($image) ): ?>
 
-						<?php endif; ?>
+						<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" title="<?php echo $image['title']; ?>"/>
 
-						<div style="text-align: center;">
+					<?php endif; ?>
 
-							<h3 style="margin: 0"><?php the_field( 'project_details' ); ?></h3>
+				</div>
 
-							<a href="<?php the_field( 'project_button' ); ?>" target="_blank" title=""><button type="">Visit Site</button></a>
+				<h3 class="project__details"><?php the_field( 'project_details' ); ?></h3>
 
-						</div><!-- text-align:center -->
+				<a href="<?php the_field( 'project_button' ); ?>" target="_blank" title=""><button type="">Visit Site</button></a>
 
-			</div>
+			</div><!-- text-align:center -->
 
-			</div><!-- .entry-content -->
+	</div><!-- .entry-content -->
 
 
 	<footer class="entry-footer">
