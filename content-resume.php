@@ -26,25 +26,20 @@
 		?>
 	</header><!-- .entry-header -->
 
-	<div class="entry-content">
+<div class="entry-content">
 
-		<?php
-			/* translators: %s: Name of current post */
-			the_content( sprintf(
-				__( 'Continue reading %s', 'twentyfifteen' ),
-				the_title( '<span class="screen-reader-text">', '</span>', false )
-			) );
+	<?php
+		/* translators: %s: Name of current post */
+		the_content( sprintf(
+			__( 'Continue reading %s', 'twentyfifteen' ),
+			the_title( '<span class="screen-reader-text">', '</span>', false )
+		) );
 
-		?>
+	?>
 
+	<div class="work-experience__container">
 	<!-- WORK EXPERIENCE -->
-	<header>
-		<h2 style="margin-top: 0; margin-bottom: 0;">Work Experience</h2>
-	</header><!-- /header -->
-
-<div style="margin-bottom: 3em;">
-
-
+		<h2>Work Experience</h2>
 
 		<?php $experience = new WP_Query(array(
 			'post_type'	=>	'experience'
@@ -63,16 +58,13 @@
 				</div>
 			</div>
 		<?php endwhile; ?>
-</div>
+	</div> <!-- work-experience__container -->
 
-<div class="clearfix"></div>
+	<div class="clearfix"></div>
 
-<div style="margin-bottom: 3em; clear:both;">
-
-
+	<div class="education__container">
 	<!-- EDUCATION -->
-			<h2>Education</h2>
-
+		<h2>Education</h2>
 
 		<?php $school = new WP_Query(array(
 				'post_type'	=>	'school'
@@ -88,9 +80,9 @@
 				</div>
 			</div>
 			<?php endwhile; ?>
-</div>
+	</div> <!-- .education__container -->
 
-	</div><!-- .entry-content -->
+</div><!-- .entry-content -->
 
 
 	<footer class="entry-footer">

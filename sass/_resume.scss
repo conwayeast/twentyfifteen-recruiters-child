@@ -1,11 +1,17 @@
+.work-experience__container,
+.education__container{
+  margin-bottom: 3em;
+  @include clearfix;
+  > h2{
+    margin: 0;
+  }
+}
+
 .container__what-where-when{
   @include span-columns(12);
   padding: 3em 0em 1em 0em;
   border-bottom: 1px solid #ccc;
   @include clearfix;
-  // &:last-child{
-  //   border-bottom: none;
-  // }
 }
 
 .container__what-where{
@@ -22,8 +28,6 @@
   @include span-columns(4);
   margin-right: 0;
   border: 3px solid #333;
-  //background: #333;
-  //color: white;
   color: #333;
   padding: 0.5em 0.25em;
   @include MQ(SM){

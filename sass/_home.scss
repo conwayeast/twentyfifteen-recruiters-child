@@ -3,12 +3,15 @@
 }
 
 .hero__title{
- font-size:3.25em;
+  font-size:3.25em;
   line-height: 145%;
+  word-wrap: break-word;
   margin-bottom: 0.35em;
   margin-top: -8px;
   @include MQ(SM){
     margin-top: 0px;
+    font-size: 2.25em;
+    line-height: 140%;
   }
 }
 
@@ -17,5 +20,8 @@
   line-height: 125%;
   font-family: "aktiv-grotesk-std",sans-serif;
   margin-bottom: 1em;
+  @include MQ(SM){
+    font-size: 1.5em;
+  }
 }
 
