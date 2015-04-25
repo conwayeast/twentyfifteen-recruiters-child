@@ -39,6 +39,7 @@
 
 .title__what{
   margin: 0 !important;
+
   @include MQ(SM){
     font-size: 1.35em !important;
     margin-bottom: 0.5em !important;
@@ -47,12 +48,14 @@
 
 .title__where{
   margin: 0 !important;
+  font-family: "aktiv-grotesk-std",sans-serif;
 }
 
 .title__when{
   margin: 0 !important;
   font-size: 0.95em !important;
   text-align: center;
+
 }
 
 .clearfix{

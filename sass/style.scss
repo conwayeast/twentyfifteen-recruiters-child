@@ -53,9 +53,9 @@
 @import "break-points";
 
 /*--------------------------------------------------------------
-# Custom Grid
+# Home
 --------------------------------------------------------------*/
-//@import "custom-grid";
+@import "home";
 
 /*--------------------------------------------------------------
 # Resume
@@ -107,6 +107,8 @@ input[type="submit"],
 .post-password-form input[type="submit"],
 .widecolumn #submit,
 .widecolumn .mu_register input[type="submit"]{
+  font-family: "aktiv-grotesk-std",sans-serif;
+  letter-spacing: 1px;
   background: #f4421a;
   border: 3px solid white;
   @include transition (background .6s ease-in-out, border .6s ease-in-out, color .6s ease-in-out);
@@ -207,6 +209,10 @@ input[type="submit"]:hover,
   background: #f4421a;
 }
 
+.entry-title {
+  font-family: "aktiv-grotesk-std",sans-serif;
+}
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -240,3 +246,33 @@ input[type="submit"]:hover,
 # Print
 --------------------------------------------------------------*/
 //@import "print";
+
+
+.link-effect-3 {
+  a {
+    padding: 10px 0;
+    margin: 0 20px;
+    color: #797878;
+    text-shadow: none;
+    position: relative;
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      overflow: hidden;
+      padding: 10px 0;
+      max-width: 0;
+      border-bottom: 2px solid #fff;
+      color: #fff;
+      content: attr(data-hover);
+      -webkit-transition: max-width 0.5s;
+      -moz-transition: max-width 0.5s;
+      transition: max-width 0.5s;
+    }
+    &:hover{
+      &::before{
+        max-width: 100%;
+      }
+    }
+  }
+}

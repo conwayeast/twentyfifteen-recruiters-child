@@ -19,6 +19,8 @@
 	<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/html5.js"></script>
 	<![endif]-->
 	<?php wp_head(); ?>
+	<script src="//use.typekit.net/bvw1nun.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script>
 </head>
 
 <body <?php body_class(); ?>>
