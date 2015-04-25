@@ -1,5 +1,8 @@
 .hero__container{
   padding: 0em 1em 2em 4.25em;
+  @include MQ(SM){
+    padding-left: 2em;
+  }
 }
 
 .hero__title{
