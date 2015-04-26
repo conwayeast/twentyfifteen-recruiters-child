@@ -1,5 +1,5 @@
 /*
- Theme Name:   Twenty Fifteen cdub Child
+ Theme Name:   Twenty Fifteen Recruiters Child
  Theme URI:    http://example.com/twenty-fifteen-child/
  Description:  Twenty Fifteen Child Theme
  Author:       Ryan Conway
@@ -53,19 +53,9 @@
 @import "break-points";
 
 /*--------------------------------------------------------------
-# Home
+# Tables
 --------------------------------------------------------------*/
-@import "home";
-
-/*--------------------------------------------------------------
-# Resume
---------------------------------------------------------------*/
-@import "resume";
-
-/*--------------------------------------------------------------
-# Project
---------------------------------------------------------------*/
-@import "project";
+@import "tables";
 
 
 /*--------------------------------------------------------------
@@ -73,10 +63,6 @@
 --------------------------------------------------------------*/
 //@import "reset";
 
-/*BACKGROUND PATTERN*/
-body {
-  background: url('http://subtlepatterns.com/patterns/symphony.png');
-}
 
 /*--------------------------------------------------------------
 # Genericons
@@ -98,52 +84,6 @@ body {
 --------------------------------------------------------------*/
 //@import "forms";
 
-
-// Change button color
-button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"],
-.post-password-form input[type="submit"],
-.widecolumn #submit,
-.widecolumn .mu_register input[type="submit"]{
-  font-family: "aktiv-grotesk-std",sans-serif;
-  letter-spacing: 1px;
-  background: #f4421a;
-  border: 3px solid white;
-  @include transition (background .6s ease-in-out, border .6s ease-in-out, color .6s ease-in-out);
-}
-
-//Remove wierd black line and background when button is active or focused
-button:hover,
-input[type="button"]:hover,
-input[type="reset"]:hover,
-input[type="submit"]:hover,
-button:focus,
-input[type="button"]:focus,
-input[type="reset"]:focus,
-input[type="submit"]:focus {
-  background-color: #f4421a;
-  outline: 0;
-}
-
-
-// Change button hover color
-button:hover,
-input[type="button"]:hover,
-input[type="reset"]:hover,
-input[type="submit"]:hover,
-.post-password-form input[type="submit"]:hover,
-.widecolumn #submit:hover,
-.widecolumn .mu_register input[type="submit"]:hover{
-  background: white;
-  border: 3px solid #f4421a;
-  color: #f4421a;
-  @include transition (background .6s ease-in-out, border .6s ease-in-out, color .6s ease-in-out);
-}
-
-
-
 /*CONTACT FORM WIDTH 100%*/
 
 .contact-form input[type='text'],
@@ -156,18 +96,6 @@ input[type="submit"]:hover,
 # Navigation
 --------------------------------------------------------------*/
 //@import "navigations/navigations";
-
-/**
- * 6.2 Menus
- */
-.main-navigation a {
-  color: white;
-  @include transition (color .3s ease-in-out);
-  &:hover{
-    color: #333;
-    @include transition (color .3s ease-in-out);
-  }
-}
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -189,12 +117,6 @@ input[type="submit"]:hover,
 --------------------------------------------------------------*/
 //@import "header";
 
-.site-header {
-  @include MQ(BM){
-    background: #f4421a;
-  }
-}
-
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
@@ -204,14 +126,6 @@ input[type="submit"]:hover,
 # Content
 --------------------------------------------------------------*/
 //@import "content/content";
-
-.secondary.toggled-on {
-  background: #f4421a;
-}
-
-.entry-title {
-  font-family: "aktiv-grotesk-std",sans-serif;
-}
 
 /*--------------------------------------------------------------
 # Footer
@@ -233,46 +147,8 @@ input[type="submit"]:hover,
 --------------------------------------------------------------*/
 //@import "media-queries";
 
-/**
- * 16.4 Desktop Small 955px
- */
-@media screen and (min-width: 59.6875em) {
-  body:before {
-    background-color: #f4421a;
-  }
-}
 
 /*--------------------------------------------------------------
 # Print
 --------------------------------------------------------------*/
 //@import "print";
-
-
-.link-effect-3 {
-  a {
-    padding: 10px 0;
-    margin: 0 20px;
-    color: #797878;
-    text-shadow: none;
-    position: relative;
-    &::before {
-      position: absolute;
-      top: 0;
-      left: 0;
-      overflow: hidden;
-      padding: 10px 0;
-      max-width: 0;
-      border-bottom: 2px solid #fff;
-      color: #fff;
-      content: attr(data-hover);
-      -webkit-transition: max-width 0.5s;
-      -moz-transition: max-width 0.5s;
-      transition: max-width 0.5s;
-    }
-    &:hover{
-      &::before{
-        max-width: 100%;
-      }
-    }
-  }
-}
